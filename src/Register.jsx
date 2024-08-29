@@ -50,20 +50,21 @@ const Register = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Converse 2K24 Registration Form</h2>
+      <h2 className='header'>Converse 2K24 Registration Form</h2>
 
       <div className='form-group'>
         <label htmlFor='event'>Event List:</label>
         <select name='event' id='event' value={formData.event} onChange={handleChange} required>
           <option value=''>Select Event</option>
-          <option value='hackathon'>Hackathon</option>
-          <option value='code jam'>Code Jam</option>
-          <option value='robotics'>Robotics Challenge</option>
-          <option value='ai ml'>AI/ML Contest</option>
-          <option value='web dev'>Web Development</option>
-          <option value='cyber security'>Cyber Security</option>
-          <option value='iot'>IoT Innovation</option>
-          <option value='other'>Other</option>
+          <option value="IT QUIZ">IT QUIZ</option>
+          <option value="LOGO HUNT">LOGO HUNT</option>
+          <option value="BUG BUZZ">BUG BUZZ</option>
+          <option value="CODATHON">CODATHON</option>
+          <option value="PY-IT">PY-IT</option>
+          <option value="AI MEMES">AI MEMES</option>
+          <option value="TECH DEBATE">TECH DEBATE</option>
+          <option value="CYBER SIEGE">CYBER SIEGE</option>
+          <option value="WEB WAVE">WEB WAVE</option>
         </select>
       </div>
 

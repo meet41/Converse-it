@@ -25,19 +25,19 @@ body {
     min-height: 100vh;
 }
 
-h2 {
+h2,.header {
     text-align: center;
-    color: var(--font-color);
+    color: black;
     padding: 20px;
     font-size: 28px;
-    border-bottom: 2px solid var(--font-color);
+    border-bottom: 2px solid black;
     margin-bottom: 20px;
     text-transform: uppercase;
     animation: fadeIn 1s ease-in-out;
 }
 
 form {
-    background-color: var(--form-bg-color); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     padding: 25px;
     border-radius: 15px;
     max-width: 500px;
@@ -55,7 +55,7 @@ label {
     display: block;
     font-size: 16px;
     margin-bottom: 5px;
-    color: var(--font-color);
+    color: black;
     font-weight: bold;
 }
 
@@ -171,7 +171,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="phone"]:focus, 
     cursor: pointer;
 }
 
-/* Popup Container Styles */
+/* Popup Container Styles
 .popup-container {
     background-color: var(--form-bg-color);
     padding: 25px;
@@ -242,4 +242,4 @@ h3 {
     p, .join-link {
         font-size: 16px;
     }
-}
+} */
