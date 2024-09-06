@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { ref, push, set } from 'firebase/database';
+import { ref, push, set, get, query, orderByChild, equalTo } from 'firebase/database';
 import { database } from './firebase'; // Adjust the path as necessary
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Register.css';
 
 const Register = () => {
+  const location = useLocation();
   const [formData, setFormData] = useState({
-    event: '',
+    event: location.state?.event || '',
     enrollment: '',
     college: '',
     name: '',
@@ -17,6 +18,7 @@ const Register = () => {
   });
 
   const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -29,23 +31,43 @@ const Register = () => {
     return emailPattern.test(email);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateEmail(formData.email)) {
       setError('Email must be a valid @scet.ac.in address');
       return;
     }
-    setError('');
 
-    const usersRef = ref(database, 'users');
-    const newUserRef = push(usersRef); // Generate a new unique key
-    set(newUserRef, formData)
-      .then(() => {
-        navigate('/thankyou', { state: { formData } });
-      })
-      .catch((error) => {
-        console.error('Error storing data:', error);
+    setIsLoading(true);
+
+    try {
+      const usersRef = ref(database, 'users');
+      const emailQuery = query(usersRef, orderByChild('email'), equalTo(formData.email));
+      const snapshot = await get(emailQuery);
+
+      let emailExists = false;
+      snapshot.forEach((childSnapshot) => {
+        const data = childSnapshot.val();
+        if (data.event === formData.event) {
+          emailExists = true;
+        }
       });
+
+      if (emailExists) {
+        setError('This email is already registered for the selected event.');
+      } else {
+        console.log('Inserting new data:', formData);
+        const newUserRef = push(usersRef);
+        await set(newUserRef, formData);
+        console.log('Data inserted successfully');
+        navigate('/thankyou', { state: { formData } });
+      }
+    } catch (error) {
+      console.error('Error checking or storing data:', error);
+      setError('There was an error processing your registration. Please try again.');
+    }
+
+    setIsLoading(false);
   };
 
   return (
@@ -122,7 +144,9 @@ const Register = () => {
         </select>
       </div>
       {error && <p className="error">{error}</p>}
-      <button type="submit" id='submit'>Register</button>
+      <button type="submit" id='submit' disabled={isLoading}>
+        {isLoading ? 'Registering...' : 'Register'}
+      </button>
     </form>
   );
 };

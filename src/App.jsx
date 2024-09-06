@@ -9,6 +9,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Register from './Register';
+import Button from './Button';
 import Thankyou from './Thankyou';
 import './App.css';
 
@@ -17,7 +18,8 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<Register />} />
+          <Route path="/" element={<Button />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/thankyou" element={<Thankyou />} />
         </Routes>
       </div>
