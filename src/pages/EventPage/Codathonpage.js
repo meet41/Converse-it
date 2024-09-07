@@ -5,9 +5,14 @@ import great from "./great.png";
 import { Link } from "react-router-dom";
 import ScrollToTop from '../../components/ScrollToTop';
 import Codathon from '../../team/Tech-poster/a4codathon.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Codathonpage = () => {
 
+  const navigate = useNavigate();
+  const handleButtonClick = (event) => {
+    navigate('/register', { state: { event } });
+  };
     return (
       <>    
       <ScrollToTop/>
@@ -28,7 +33,7 @@ const Codathonpage = () => {
                 src={Codathon}
                 alt="Codathon "
               />
-              <button className="register-button" >
+              <button className="register-button" onClick={() => handleButtonClick('CODATHON')}>
               Register for Event
             </button>
             </div>

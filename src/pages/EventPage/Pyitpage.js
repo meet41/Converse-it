@@ -2,11 +2,16 @@ import React from 'react';
 import './LogoHuntPage.css'; // Import the CSS file for styling
 import Footer from '../../components/Footer';
 import great from "./great.png";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import ScrollToTop from '../../components/ScrollToTop';
 import Pyit from '../../team/Tech-poster/a4pyit.jpg';
 
 const Pyitpage = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = (event) => {
+    navigate('/register', { state: { event } });
+  };
     return (
       <>    
       <ScrollToTop/>
@@ -27,7 +32,7 @@ const Pyitpage = () => {
                 src={Pyit}
                 alt="PY-IT "
               />
-              <button className="register-button" >
+              <button className="register-button" onClick={() => handleButtonClick('PY-IT')}>
               Register for Event
             </button>
             </div>

@@ -2,12 +2,17 @@ import React from 'react';
 import './LogoHuntPage.css'; // Import the CSS file for styling
 import Footer from '../../components/Footer';
 import great from "./great.png";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import ScrollToTop from '../../components/ScrollToTop';
 import Bugbuzz from '../../team/Tech-poster/a4bugbuzz.jpg';
 
 const Bugbuzzpage = () => {
 
+  const navigate = useNavigate();
+
+  const handleButtonClick = (event) => {
+    navigate('/register', { state: { event } });
+  };
     return (
       <>    
       <ScrollToTop/>
@@ -34,7 +39,7 @@ const Bugbuzzpage = () => {
               src={Bugbuzz} 
               alt="Bug Buzz"
             />
-            <button className="register-button" >
+            <button className="register-button" onClick={() => handleButtonClick('BUG BUZZ')}>
               Register for Event
             </button>
           </div>

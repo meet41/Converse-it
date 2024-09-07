@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes,Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/Homepage';
 import About from './pages/About';
 import Events from './pages/Events';
@@ -7,6 +8,8 @@ import TeamsSection from './pages/TeamSection';
 import Converse from './pages/TeamMember/Converse';
 import Graphics from './pages/TeamMember/Graphics';
 import Marketing from './pages/TeamMember/Marketing';
+import Register from '../src/pages/Register';
+import Thankyou from '../src/pages/Thankyou';
 
 import Decoration from './pages/TeamMember/Decoration';
 import NonTech from './pages/TeamMember/NonTech';
@@ -62,6 +65,9 @@ function App() {
     <Route path="graphics-team" element={<Graphics/>}/>
     <Route path="decoration-team" element={<Decoration/>}/>
     <Route path="marketing-team" element={<Marketing/>}/>
+    {/* <Route path="/" element={<Button />} /> */}
+    <Route path="/register" element={<Register />} />
+    <Route path="/thankyou" element={<Thankyou />} />
     
     
     <Route path="logohunt-team" element={<LogoHunt/>}/>

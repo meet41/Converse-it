@@ -2,12 +2,16 @@ import React from 'react';
 import './LogoHuntPage.css'; // Import the CSS file for styling
 import Footer from '../../components/Footer';
 import great from "./great.png";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import ScrollToTop from '../../components/ScrollToTop';
 import Cybersiege from '../../team/Tech-poster/a4cybersiege.jpg';
 
 const Cybersiegepage = () => {
- 
+  const navigate = useNavigate();
+
+  const handleButtonClick = (event) => {
+    navigate('/register', { state: { event } });
+  };
     return (
       <>
         <ScrollToTop />
@@ -28,7 +32,7 @@ const Cybersiegepage = () => {
                 src={Cybersiege}
                 alt="Cyber Siege"
               />
-              <button className="register-button" >
+              <button className="register-button" onClick={() => handleButtonClick('CYBER SIEGE')}>
               Register for Event
             </button>
             </div>

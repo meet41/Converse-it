@@ -2,13 +2,18 @@ import React from 'react';
 import './LogoHuntPage.css'; // Import the CSS file for styling
 import Footer from '../../components/Footer';
 import great from "./great.png";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import ScrollToTop from '../../components/ScrollToTop';
 import Logohunt from '../../team/Tech-poster/a4logohunt.jpg';
 
 
 
 const LogoHuntPage = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = (event) => {
+    navigate('/register', { state: { event } });
+  };
   return (
     <>    
     <ScrollToTop/>
@@ -35,7 +40,7 @@ const LogoHuntPage = () => {
             src={Logohunt}
             alt="Logo Hunt"
           />
-            <button className="register-button" >
+            <button className="register-button" onClick={() => handleButtonClick('LOGO HUNT')}>
               Register for Event
             </button>
         </div>
