@@ -23,7 +23,7 @@ function Converse() {
         </div>
         </div>
         <div className="converse">
-            <h1 className="heading">Faculty Event Heads</h1>
+            <h1 className="heading">Faculty Coordinators</h1>
             <div className="image-grid">
                 <div className="image-card">
                     <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />

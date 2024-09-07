@@ -4,21 +4,29 @@ import ScrollToTop from '../../components/ScrollToTop';
 import TeamCard from '../../components/TeamCard';
 import Footer from '../../components/Footer';
 import great from "./great.png";
-// import TeamCard from '../components/TeamCard';
-// import Footer from '../components/Footer';
-// import ScrollToTop from '../components/ScrollToTop';
-// import great from "./great.png";
+import ipl from './ipl.jpg';
+import bgmi from './bgmi.jpg';
+import valorant from './valorant.jpg'
+import musical from './musical.jpeg'
+import treasure from './treasure.jpeg'
+import mindover from './mindovermatter.jpg'
+import levelzero from './levelzero.jpg'
+import blind from './blindnavigator.jpg'
+
 
 const Nontech = () => {
     const teams = [
-   
-        { title: 'Roadies', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/logohunt-event' },
-        { title: 'Valorant Blitz', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/itquiz-event' },
-        { title: 'Campus Combat', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/bugbuzz-event' },
-        { title: 'IPL Auction', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/codathon-event' },
-        { title: "Hell's Kitchen", imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/pyit-event' },
-        { title: 'Treasure Hunt', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/aimemes-event' },
-        { title: 'Melody Mania', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/techdebate-event' },
+        { title: 'BGMI', imageSrc:bgmi, link: '/bgmi-event' },
+        { title: 'Valorant Blitz', imageSrc:valorant, link: '/valorant-event' },
+        { title: 'IPL Auction', imageSrc:ipl, link: '/ipl-event' },
+        { title: 'Level Zero', imageSrc:levelzero , link: '/levelzero-event' },
+        { title: 'Musical Mystery', imageSrc:musical, link: '/musical-event' },
+       
+       
+        { title: "Mind Over Matter", imageSrc:mindover , link: '/mindover-event' },
+       
+        { title: 'Blind Navigator', imageSrc:blind , link: '/blindnavigation-event' },
+        { title: 'Treasure Hunt', imageSrc:treasure , link: '/Treasure-event' },
 ];
 
     return (

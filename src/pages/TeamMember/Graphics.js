@@ -3,6 +3,18 @@ import { Link } from "react-router-dom";
 import ScrollToTop from '../../components/ScrollToTop';
 import great from "./great.png";
 import Footer from '../../components/Footer';
+import uttam from '../../team/10core/uttam8.png';
+import ayushv from '../../team/10core/ayushv.png';
+import vanshika from '../../team/10core/vanshika.png';
+import kangana from '../../team/10core/kangana.png';
+import namitha from '../../team/10core/namitha.png';
+import nupur from '../../team/10core/nupur.png';
+import palak from '../../team/10core/palak.png';
+import sanchi from '../../team/10core/sanchi.png';
+import twisha from '../../team/10core/twisha.png';
+import KrishnaDabhi from '../../team/10core/KrishnaDabhi.png';
+import KrushaliGohil from '../../team/10core/KrushaliGohil.png';
+
 
 function Graphics() {
     return (<>
@@ -22,68 +34,67 @@ function Graphics() {
             </h1>
         </div>
         </div>
+      
         <div className="converse">
-            <h1 className="heading">Faculty Event Heads</h1>
+            <h1 className="heading">Team Coordinator</h1>
             <div className="image-grid">
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={uttam} alt="Coordinator 1" className="imageh" />
+                    <p>Uttam Moradiya</p>
                 </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
-                </div>
+              
               
             </div>
             
         </div>
         <div className="converse">
-            <h1 className="heading">Student Event Heads</h1>
+            <h1 className="heading"> Team Members  </h1>
             <div className="image-grid">
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={ayushv} alt="Coordinator 1" className="imagev" />
+                    <p>Ayush Vanani</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={KrushaliGohil} alt="Coordinator 2" className="imagev" />
+                    <p>Krushali Gohil </p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
+                    <img src={vanshika} alt="Coordinator 3" className="imagev" />
+                    <p>Vanshika Kapadiya</p>
                 </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
-                </div>
+               
               
+                <div className="image-card">
+                    <img src={palak} alt="Coordinator 2" className="imagev" />
+                    <p>Palak Tank</p>
+                </div>
+                <div className="image-card">
+                    <img src={sanchi} alt="Coordinator 2" className="imagev" />
+                    <p>Sanchi Savani</p>
+                </div>
+                <div className="image-card">
+                    <img src={namitha} alt="Coordinator 4" className="imagev" />
+                    <p>Namitha  Yelugam</p>
+                </div>
+                <div className="image-card">
+                    <img src={nupur} alt="Coordinator 2" className="imagev" />
+                    <p>Nupur Sonware</p>
+                </div>
+                <div className="image-card">
+                    <img src={twisha} alt="Coordinator 2" className="imagev" />
+                    <p>Twisha Savani</p>
+                </div>
+                <div className="image-card">
+                    <img src={kangana} alt="Coordinator 4" className="imagev" />
+                    <p>Kangana Gupta</p>
+                </div>
+                <div className="image-card">
+                    <img src={KrishnaDabhi} alt="Coordinator 2" className="imagev" />
+                    <p> Krishna Dabhi</p>
+                </div>
+               
+               
             </div>
-            
-        </div>
-        <div className="converse">
-            <h1 className="heading">Student Volunteers</h1>
-            <div className="image-grid">
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 5" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 6" className="image" />
-                </div>
-              
-            </div>
-            
         </div>
         <Footer/>
         </>

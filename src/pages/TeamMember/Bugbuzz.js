@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import ScrollToTop from '../../components/ScrollToTop';
 import great from "./great.png";
 import Footer from '../../components/Footer';
+import SahilSojitra from '../../team/bugbuzz/SahilSojitra.png';
+import ManavAvaiya from '../../team/bugbuzz/ManavAvaiya.png';
+import JashChheta from '../../team/bugbuzz/JashChheta.png';
+import NeelMandanka from '../../team/bugbuzz/NeelMandanka.png';
+import VachhaniUtsav from '../../team/bugbuzz/VachhaniUtsav.png';
+import KarunaPatel from '../../team/faculty/Karuna.png';
+import ForamPatel from '../../team/faculty/Foram.png';
+import DhyaniJoshi from '../../team/faculty/Dhyani.png';
+
 
 function Bugbuzz() {
     return (<>
@@ -26,17 +35,19 @@ function Bugbuzz() {
             <h1 className="heading">Faculty Event Heads</h1>
             <div className="image-grid">
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={KarunaPatel} alt="Coordinator 1" className="imagef" />
+                    <p>Prof. Karuna Patel</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={ForamPatel} alt="Coordinator 2" className="imagef" />
+                    <p>Prof. Foram Patel</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
+                    <img src={DhyaniJoshi} alt="Coordinator 2" className="imagef" />
+                    <p>Prof. Dhyani Joshi </p>
                 </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
-                </div>
+               
+                
               
             </div>
             
@@ -45,42 +56,46 @@ function Bugbuzz() {
             <h1 className="heading">Student Event Heads</h1>
             <div className="image-grid">
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={SahilSojitra} alt="Coordinator 1" className="imageh" />
+                    <p>Sahil Sojitra</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={SahilSojitra} alt="Coordinator 2" className="imageh" />
+                    <p>Krish Vanani</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
+                    <img src={SahilSojitra} alt="Coordinator 3" className="imageh" />
+                    <p>Krishna Desai</p>
                 </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
-                </div>
+              
               
             </div>
             
         </div>
         <div className="converse">
-            <h1 className="heading">Student Volunteers</h1>
+            <h1 className="heading">Event Volunteers</h1>
             <div className="image-grid">
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={ManavAvaiya} alt="Coordinator 1" className="imagev" />
+                    <p>Manav Avaiya</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={JashChheta} alt="Coordinator 2" className="imagev" />
+                    <p>Jash Chheta</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
+                    <img src={NeelMandanka} alt="Coordinator 3" className="imagev" />
+                    <p>Neel Mandanka </p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
+                    <img src={VachhaniUtsav} alt="Coordinator 4" className="imagev" />
+                    <p>Vachhani Utsav</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 5" className="image" />
+                    <img src={SahilSojitra} alt="Coordinator 5" className="imagev" />
+                    <p>Zenith Dayani</p>
                 </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 6" className="image" />
-                </div>
+              
               
             </div>
             

@@ -18,13 +18,9 @@ function Header() {
         </div>
         
         <div className='conve'>
-          <h1 className="co" onClick={handleAnimationTrigger}>CO</h1>
-          <h1 className="n" onClick={handleAnimationTrigger}>N</h1>
-          <h1 className="ve" onClick={handleAnimationTrigger}>VE</h1>
-          <h1 className="r" onClick={handleAnimationTrigger}>R</h1>
-          <h1 className="se" onClick={handleAnimationTrigger}>SE</h1>
-          <h1 className="year">2K24</h1>
+          <h1 className="co">CONVERSE</h1>
         </div>
+        <h1 className="year">2K24</h1>
       </header>
       {showConfetti && (
         <div style={{

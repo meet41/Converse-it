@@ -3,6 +3,16 @@ import { Link } from "react-router-dom";
 import ScrollToTop from '../../components/ScrollToTop';
 import great from "./great.png";
 import Footer from '../../components/Footer';
+import DevButani from '../../team/marketing/DevButani.png';
+import JayReshamwala from '../../team/marketing/JayReshamwala.png';
+import KhushiShah from '../../team/marketing/KhushiShah.png';
+import ManavAvaiya from '../../team/marketing/ManavAvaiya.png';
+import MitShah from '../../team/marketing/MitShah.png';
+import PuravDesai from '../../team/marketing/PuravDesai.png';
+import SarahShaikh from '../../team/marketing/SarahShaikh.png';
+import VrundanSoni from '../../team/marketing/VrundanSoni.png';
+
+
 
 function Marketing() {
     return (<>
@@ -22,64 +32,52 @@ function Marketing() {
             </h1>
         </div>
         </div>
+  
+            
+        
         <div className="converse">
-            <h1 className="heading">Faculty Event Heads</h1>
+            <h1 className="heading">Team Coordinators </h1>
             <div className="image-grid">
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={JayReshamwala} alt="Coordinator 1" className="imageh" />
+                    <p>Jay Reshamwala</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={DevButani} alt="Coordinator 2" className="imageh" />
+                    <p>Dev Butani</p>
+                    <p>Hi</p>
                 </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
-                </div>
+
               
             </div>
             
         </div>
         <div className="converse">
-            <h1 className="heading">Student Event Heads</h1>
+            <h1 className="heading">Team Members</h1>
             <div className="image-grid">
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={KhushiShah} alt="Coordinator 1" className="imagev" />
+                    <p>Khushi Shah</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={ManavAvaiya} alt="Coordinator 2" className="imagev" />
+                    <p>Manav Avaiya</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
+                    <img src={MitShah} alt="Coordinator 3" className="imagev" />
+                    <p>Mit Shah</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
-                </div>
-              
-            </div>
-            
-        </div>
-        <div className="converse">
-            <h1 className="heading">Student Volunteers</h1>
-            <div className="image-grid">
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={PuravDesai} alt="Coordinator 4" className="imagev" />
+                    <p>Purav Desai</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={SarahShaikh} alt="Coordinator 5" className="imagev" />
+                    <p>Sarah Shaikh </p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 5" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 6" className="image" />
+                    <img src={VrundanSoni} alt="Coordinator 6" className="imagev" />
+                    <p>Vrundan Soni </p>
                 </div>
               
             </div>

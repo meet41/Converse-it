@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import great from "./great.png";
+import nontechii from '../pages/event-type/nontechiii.webp';
+import techii from '../pages/event-type/techiiii.webp';
 
 const Events = () => {
     const teams = [
-        { title: 'Tech Event', imageSrc: 'https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/tech-event' },
-       { title: 'Non-tech Event', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/nontech-event' },
+        { title: 'Tech Event', imageSrc: techii, link: '/tech-event' },
+       { title: 'Non-tech Event', imageSrc:nontechii, link: '/nontech-event' },
     ];
 
     return (

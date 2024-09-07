@@ -3,6 +3,16 @@ import { Link } from "react-router-dom";
 import ScrollToTop from '../../components/ScrollToTop';
 import great from "./great.png";
 import Footer from '../../components/Footer';
+import TanviVaghasiya from '../../team/webwave/Webwave_tanvi.png';
+import PrinceViradiya from '../../team/webwave/webPrince.png';
+import KrishnaShethna from '../../team/webwave/WebWave_Krishnashethna.png';
+import MilapGohil from '../../team/webwave/Webwave_Milap.png';
+import PreetMehta from '../../team/webwave/Webwave_Preet.png';
+import RenishDhaduk from '../../team/webwave/Webwave_Renish.png';
+import DhruvItaliya from '../../team/webwave/DhruvItaliya.png';
+import Vivek from '../../team/faculty/mukesh.png';
+import Mitul from '../../team/faculty/mukesh.png';
+
 
 function Webwave() {
     return (<>
@@ -26,17 +36,14 @@ function Webwave() {
             <h1 className="heading">Faculty Event Heads</h1>
             <div className="image-grid">
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={Vivek} alt="Coordinator 1" className="imagef" />
+                    <p>Prof. Vivek Chapaneria</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={Mitul} alt="Coordinator 2" className="imagef" />
+                    <p>Prof. Mitul Patel</p>
                 </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
-                </div>
+                
               
             </div>
             
@@ -45,42 +52,42 @@ function Webwave() {
             <h1 className="heading">Student Event Heads</h1>
             <div className="image-grid">
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={TanviVaghasiya} alt="Coordinator 1" className="imageh" />
+                    <p> Tanvi Vaghasiya</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={PreetMehta} alt="Coordinator 2" className="imageh" />
+                    <p> Preet Mehta</p>
                 </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
-                </div>
+               
               
             </div>
             
         </div>
         <div className="converse">
-            <h1 className="heading">Student Volunteers</h1>
+            <h1 className="heading">Event Volunteers</h1>
             <div className="image-grid">
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+            <div className="image-card">
+                    <img src={PrinceViradiya} alt="Coordinator 4" className="imagev" />
+                    <p>Prince Viradiya</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={DhruvItaliya} alt="Coordinator 3" className="imagev" />
+                    <p>Dhruv Italia</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
+                    <img src={MilapGohil} alt="Coordinator 1" className="imagev" />
+                    <p>Milap Gohil</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
+                    <img src={RenishDhaduk} alt="Coordinator 2" className="imagev" />
+                    <p>Renish Dhaduk</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 5" className="image" />
+                    <img src={KrishnaShethna} alt="Coordinator 5" className="imagev" />
+                    <p>Krishna Shethna</p>
                 </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 6" className="image" />
-                </div>
+               
               
             </div>
             

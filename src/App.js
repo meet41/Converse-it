@@ -7,11 +7,9 @@ import TeamsSection from './pages/TeamSection';
 import Converse from './pages/TeamMember/Converse';
 import Graphics from './pages/TeamMember/Graphics';
 import Marketing from './pages/TeamMember/Marketing';
-import Photography from './pages/TeamMember/Photography';
-import Registration from './pages/TeamMember/Registration';
-import Sponsor from './pages/TeamMember/Sponsor';
+
 import Decoration from './pages/TeamMember/Decoration';
-import WebDevelopment from './pages/TeamMember/WebDevelopment';
+import NonTech from './pages/TeamMember/NonTech';
 import LogoHunt from './pages/TeamMember/LogoHunt';
 import Itquiz from './pages/TeamMember/Itquiz';
 import Bugbuzz from './pages/TeamMember/Bugbuzz';
@@ -23,6 +21,32 @@ import Cybersiege from './pages/TeamMember/Cybersiege';
 import Webwave from './pages/TeamMember/Webwave';
 import Techevent from './pages/event-type/Techevent';
 import Nontech from './pages/event-type/Nontech';
+import AboutPage from './pages/AboutPage';
+
+import SchedulePage from './pages/SchedulePage';
+import LogoHuntPage from './pages/EventPage/LogoHuntPage';
+import Itquizpage from './pages/EventPage/Itquizpage';
+import Pyitpage from './pages/EventPage/Pyitpage';
+import Bugbuzzpage from './pages/EventPage/Bugbuzzpage';
+import Codathonpage from './pages/EventPage/Codathonpage';
+import Aimemespage from './pages/EventPage/Aimemespage';
+import Techdebatepage from './pages/EventPage/Techdebatepage';
+import Cybersiegepage from './pages/EventPage/Cybersiegepage';
+import Webwavepage from './pages/EventPage/Webwavepage';
+import Aiquizpage from './pages/EventPage/Aiquizpage';
+
+
+
+
+import LevelZeroPage from './pages/Noneventpage/LevelZeroPage';
+import MusicalMysteryPage from './pages/Noneventpage/MusicalMysteryPage';
+import IPLAuctionPage from './pages/Noneventpage/IPLAuctionPage';
+import BGMIPage from './pages/Noneventpage/BGMIPage';
+import MindOverMatterPage from './pages/Noneventpage/MindOverMatterPage';
+import ValorantBlitzPage from './pages/Noneventpage/ValorantBlitzPage';
+import BlindNavigatorPage from './pages/Noneventpage/BlindNavigatorPage';
+import TreasureHuntPage from './pages/Noneventpage/TreasureHuntPage';
+import Aiquiz from './pages/TeamMember/Aiquiz';
 
 
 function App() {
@@ -34,13 +58,11 @@ function App() {
     <Route path="events" element={<Events/>}/>
     <Route path="team" element={<TeamsSection/>}/>
     <Route path="converse-team" element={<Converse/>}/>
-    <Route path="web-team" element={<WebDevelopment/>}/>
+    <Route path="nontech-team" element={<NonTech/>}/>
     <Route path="graphics-team" element={<Graphics/>}/>
     <Route path="decoration-team" element={<Decoration/>}/>
     <Route path="marketing-team" element={<Marketing/>}/>
-    <Route path="photography-team" element={<Photography/>}/>
-    <Route path="registration-team" element={<Registration/>}/>
-    <Route path="sponsor-team" element={<Sponsor/>}/>
+    
     
     <Route path="logohunt-team" element={<LogoHunt/>}/>
     <Route path="itquiz-team" element={<Itquiz/>}/>
@@ -48,12 +70,43 @@ function App() {
     <Route path="codathon-team" element={<Codathon/>}/>
     <Route path="pyit-team" element={<Pyit/>}/>
     <Route path="aimemes-team" element={<Aimemes/>}/>
+    <Route path="aiquiz-team" element={<Aiquiz/>}/>
     <Route path="techdebate-team" element={<Techdebate/>}/>
     <Route path="cybersiege-team" element={<Cybersiege/>}/>
     <Route path="webwave-team" element={<Webwave/>}/>
     <Route path="tech-event" element={<Techevent/>}/>
     <Route path="nontech-event" element={<Nontech/>}/>
+    <Route path="aboutpage" element={<AboutPage/>}/>
     
+    <Route path="schedule" element={<SchedulePage/>}/>
+
+
+
+
+     {/* Tech event page */}
+    <Route path="logohunt-event" element={<LogoHuntPage/>}/>
+    <Route path="itquiz-event" element={<Itquizpage/>}/>
+    <Route path="bugbuzz-event" element={<Bugbuzzpage/>}/>
+    <Route path="codathon-event" element={<Codathonpage/>}/>
+    <Route path="pyit-event" element={<Pyitpage/>}/>
+    <Route path="aimemes-event" element={<Aimemespage/>}/>
+    <Route path="techdebate-event" element={<Techdebatepage/>}/>
+    <Route path="cybersiege-event" element={<Cybersiegepage/>}/>
+    <Route path="webwave-event" element={<Webwavepage/>}/>
+    <Route path="aiquiz-event" element={<Aiquizpage/>}/>
+
+
+
+    {/* Non-tech event page */}
+    <Route path="levelzero-event" element={<LevelZeroPage/>}/>
+    <Route path="musical-event" element={<MusicalMysteryPage/>}/>
+    <Route path="ipl-event" element={<IPLAuctionPage/>}/>
+    <Route path="bgmi-event" element={<BGMIPage/>}/>
+    <Route path="mindover-event" element={<MindOverMatterPage/>}/>
+    <Route path="valorant-event" element={<ValorantBlitzPage/>}/>
+    <Route path="blindnavigation-event" element={<BlindNavigatorPage/>}/>
+    <Route path="Treasure-event" element={<TreasureHuntPage/>}/>
+   
     </Routes>
   
     </>

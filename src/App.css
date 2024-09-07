@@ -1,21 +1,45 @@
-
-body {
- 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+/* body {
   background-image: url('https://www.wallpaperflare.com/static/43/858/375/stars-planets-galaxy-4k-wallpaper.jpg');
   background-image: url('https://fastcode.space/wp-content/uploads/2019/11/Starry-Glamour-Dream-Earth-Beautiful-Purple-Blue-Gradient-Background-Poster-Illustration-0.jpg');
+  background-image: url('./image/back3.png');
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center center; 
   background-attachment: fixed; 
   margin: 0; 
   padding: 0; 
-}
+  
+} */
 
 body {
   margin: 0;
-  font-family: 'Press Start 2P', cursive; 
+  font-family: "Montserrat", sans-serif;
   background-color: #000;
   color: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+                   url('./image/back3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 0.4;
+  z-index: -1; /* Ensure it stays in the background */
 }
 
 .homepage {
@@ -29,7 +53,7 @@ body {
   height:160px
 }
 .logog{
-  scale: 0.30;;
+  scale: 0.30;
   margin: -225px 300px;
   padding:0px 0px;
 }
@@ -41,9 +65,10 @@ body {
   font-size: 1.4rem;
 } */
 .conve {
+  font-family: "Raleway", sans-serif;
   display: flex;
   margin: 15px -450px;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 1.4rem;
 
   /* Animation for bouncing effect */
@@ -51,36 +76,29 @@ body {
 }
 
 /* Keyframes for bounce animation */
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0); /* Starting and ending position */
-  }
-  50% {
-    transform: translateY(-5px); /* Move up by 20px */
-  }
-}
+
 
 .co{
 /* color:rgb(16, 195, 255);   */
-animation: bounce 2s infinite; /* 2 seconds duration, infinite loop */
+ /* 2 seconds duration, infinite loop */
 }
 .n{
 /* color:rgb(197, 197, 14); */
-animation: bounce 2s infinite; /* 2 seconds duration, infinite loop */
+ /* 2 seconds duration, infinite loop */
 }
 .ve{
 /* color: rgb(63, 62, 62); */
-animation: bounce 2s infinite; /* 2 seconds duration, infinite loop */
+/* 2 seconds duration, infinite loop */
 }
 .r{
 /* color: rgb(4, 110, 4); */
-animation: bounce 2s infinite; /* 2 seconds duration, infinite loop */
+ /* 2 seconds duration, infinite loop */
 }
 .se{
 /* color:rgb(185, 6, 6); */
-animation: bounce 2s infinite; /* 2 seconds duration, infinite loop */
+ /* 2 seconds duration, infinite loop */
 }
-.year{
+.year{font-family: "Raleway", sans-serif;
   color: #ffffff;
   font-size: 3.7rem;
   margin-top:10px;
@@ -101,13 +119,13 @@ animation: bounce 2s infinite; /* 2 seconds duration, infinite loop */
   
   padding: 0px 0px;
   width: 50%;
-  text-align: left;
+  text-align: center;
   
 }
 
 
 .explore-section h3 {
-  color:#00eeff;
+  color:#d148d3;
   font-size: 2.2em;
   margin-bottom: 20px;
 }
@@ -118,7 +136,9 @@ animation: bounce 2s infinite; /* 2 seconds duration, infinite loop */
 }
 
 .explore-section ul li a:hover {
-  color:#00eeff;
+  background: linear-gradient(90deg, #4873ff 40%, #d148d3 60%); /* More distinct color transition */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   
 }
 
@@ -157,7 +177,7 @@ animation: bounce 2s infinite; /* 2 seconds duration, infinite loop */
   text-align: center;
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 80px;
   border-top: 2px solid #333;
   padding-top: 20px;
 }
@@ -166,8 +186,11 @@ animation: bounce 2s infinite; /* 2 seconds duration, infinite loop */
 }
 
 .footer-section h4 {
-  color: #00eeff;
+  background: linear-gradient(90deg, #4873ff 20%, #d148d3 80%); /* More distinct color transition */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 1.5em;
+  font-weight: 420;
   margin-bottom: 10px;
 }
 
@@ -316,7 +339,7 @@ margin:0px -12px;
 }
 /* .team-cards-container a:hover{
   text-decoration: none;
-  color:#00eeff;
+  color:#d148d3;
    
 } */
 .teams-section h3{
@@ -333,7 +356,7 @@ margin:0px -12px;
 }
 .teams-section {
   text-align: center;
-  margin-top: -30px;
+  margin-top: -40px;
 }
 
 
@@ -352,7 +375,9 @@ margin:0px -12px;
   color: white;
 }
 .teams-section div h1 a:hover {
-  color:#00eeff;
+  background: linear-gradient(90deg, #4873ff 10%, #d148d3 90%); /* More distinct color transition */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   
 }
 .teams-section .meet{
@@ -409,12 +434,25 @@ member
   box-sizing: border-box;
 }
 
-.image {
+
+.image-card  .imagef {
+  background: linear-gradient(0deg, white, #ffcb83);
   width: 90%;
   height: auto;
   border-radius: 10px;
 }
-
+.image-card  .imageh {
+  background: linear-gradient(0deg, white, #7eb7e6);
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+.image-card  .imagev {
+  background: linear-gradient(0deg, white, #da86e6);
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
 /* newmember */
 .converse {
   text-align: center;
@@ -427,7 +465,7 @@ member
   font-size:20px;
   font-weight: 1000;
   margin:0px 0px;
-  padding: 0px 0px;
+  padding: 10px 0px;
 }
 
 .converse .heading {
@@ -524,25 +562,10 @@ member
 
 
 @media screen and (max-width: 1800px) {
-  .logog{
-    scale: 0.40;;
-    margin: -160px 100px;
-    padding:0px 0px;
-  }
+  
   
  
-  .conve {
-    display: flex;
-    margin: 15px -230px;
-    font-style: italic;
-    font-size: 1.9rem; 
-  }
-  .year{
-    color: #ffffff;
-    font-size: 5.0rem;
-    margin-top:15px;
-    margin-left: 10px;
-  }
+
   .explore-section {
   
     padding: 0px 0px;
@@ -593,7 +616,8 @@ member
 }
 
 .explore-section h3 {
-  color:#00eeff;
+  color:#d148d3;
+  /* #00eeff */
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -605,7 +629,7 @@ member
 }
 
 .explore-section ul li a:hover {
-  color:#00eeff;
+  color:#d148d3;
   
 }
 
@@ -630,26 +654,7 @@ member
 
 
 @media screen and (max-width: 1600px) {
-  .logog{
-    scale: 0.40;;
-    margin: -160px 100px;
-    padding:0px 0px;
-  }
-  
-  
  
-  .conve {
-    display: flex;
-    margin: 15px -230px;
-    font-style: italic;
-    font-size: 1.9rem; 
-  }
-  .year{
-    color: #ffffff;
-    font-size: 5.0rem;
-    margin-top:15px;
-    margin-left: 10px;
-  }
   .explore-section {
   
     padding: 0px 0px;
@@ -699,7 +704,7 @@ member
 
 
 .explore-section h3 {
-  color:#00eeff;
+  color:#d148d3;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -711,7 +716,7 @@ member
 }
 
 .explore-section ul li a:hover {
-  color:#00eeff;
+  color:#d148d3;
   
 }
 
@@ -741,38 +746,9 @@ member
 
 
 @media screen and (max-width: 1400px) {
-  /* .logog{
-    scale: 0.30;;
-    margin: -225px 150px;
-    padding:0px 0px;
-  }
-  
+
  
-  .conve {
-    display: flex;
-    margin: 15px -310px;
-    font-style: italic;
-    font-size: 1.4rem;
-  } */
-  .logog{
-    scale: 0.40;;
-    margin: -160px 10px;
-    padding:0px 0px;
-  }
-  
  
-  .conve {
-    display: flex;
-    margin: 15px -130px;
-    font-style: italic;
-    font-size: 1.9rem; 
-  }
-  .year{
-    color: #ffffff;
-    font-size: 5.0rem;
-    margin-top:15px;
-    margin-left: 10px;
-  }
   .team-card {
    
     margin: 10px -10px; 
@@ -820,42 +796,17 @@ member
     margin-left:-600px;
    
   }
+  .welcome-message {
+    margin-top: 30px;
+    font-size: 1.9em;
+    width:auto;
+  }
+  
   
 }
 
 @media screen and (max-width: 1135px) {
-  /* .logog{
-    scale: 0.30;;
-    margin: -225px 150px;
-    padding:0px 0px;
-  }
-  
- 
-  .conve {
-    display: flex;
-    margin: 15px -310px;
-    font-style: italic;
-    font-size: 1.4rem;
-  } */
-  .logog{
-    scale: 0.40;;
-    margin: -160px 10px;
-    padding:0px 0px;
-  }
-  
- 
-  .conve {
-    display: flex;
-    margin: 15px -130px;
-    font-style: italic;
-    font-size: 1.9rem; 
-  }
-  .year{
-    color: #ffffff;
-    font-size: 5.0rem;
-    margin-top:15px;
-    margin-left: 10px;
-  }
+
  
   .teams-section .meet{
     margin-left:-550px;
@@ -936,7 +887,7 @@ member
 
 
 .explore-section h3 {
-  color:#00eeff;
+  color:#d148d3;
   font-size: 2.1em;
   margin-bottom: 20px;
 }
@@ -947,7 +898,7 @@ member
 }
 
 .explore-section ul li a:hover {
-  color:#00eeff;
+  color:#d148d3;
   
 }
 
@@ -964,31 +915,13 @@ member
 .welcome-message {
   margin-top: 30px;
   font-size: 1.5em;
-  width: 140%;
+  width: auto;
 }
 }
 
 @media screen and (max-width: 992px) {
   
-  .logog{
-    scale: 0.40;;
-    margin: -200px -100px;
-    padding:0px 0px;
-  }
   
- 
-  .conve {
-    display: flex;
-    margin: 25px -20px;
-    font-style: italic;
-    font-size: 1.5rem; 
-  }
-  .year{
-    color: #ffffff;
-    font-size: 4.2rem;
-    margin-top:15px;
-    margin-left: 10px;
-  }
   .slider {
   
     width: 840px;
@@ -1116,7 +1049,7 @@ member
 
 
 .explore-section h3 {
-  color:#00eeff;
+  color:#d148d3;
   font-size: 1.7em;
   margin-bottom: 20px;
 }
@@ -1128,7 +1061,7 @@ member
 }
 
 .explore-section ul li a:hover {
-  color:#00eeff;
+  color:#d148d3;
   
 }
 
@@ -1166,7 +1099,7 @@ member
   text-align: center;
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 80px;
   border-top: 2px solid #333;
   padding-top: 20px;
 }
@@ -1175,7 +1108,7 @@ member
 }
 
 .footer-section h4 {
-  color: #00eeff;
+  color: #d148d3;
   font-size: 1.2em;
   margin-bottom: 10px;
 }
@@ -1189,25 +1122,7 @@ member
 
 @media screen and (max-width: 856px) {
   
-  .logog{
-    scale: 0.40;;
-    margin: -200px -100px;
-    padding:0px 0px;
-  }
-  
- 
-  .conve {
-    display: flex;
-    margin: 25px -20px;
-    font-style: italic;
-    font-size: 1.5rem; 
-  }
-  .year{
-    color: #ffffff;
-    font-size: 4.2rem;
-    margin-top:15px;
-    margin-left: 10px;
-  }
+
   .slider {
   
     width: 840px;
@@ -1323,7 +1238,7 @@ member
 
 
 .explore-section h3 {
-  color:#00eeff;
+  color:#d148d3;
   font-size: 1.7em;
   margin-bottom: 20px;
 }
@@ -1335,7 +1250,7 @@ member
 }
 
 .explore-section ul li a:hover {
-  color:#00eeff;
+  color:#d148d3;
   
 }
 
@@ -1373,7 +1288,7 @@ member
   text-align: center;
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 80px;
   border-top: 2px solid #333;
   padding-top: 20px;
 }
@@ -1382,7 +1297,7 @@ member
 }
 
 .footer-section h4 {
-  color: #00eeff;
+  color: #d148d3;
   font-size: 1.2em;
   margin-bottom: 10px;
 }
@@ -1395,25 +1310,7 @@ member
 }
 @media screen and (max-width: 768px) {
    
-  .logog{
-    scale: 0.35;;
-    margin: -200px -100px;
-    padding:0px 0px;
-  }
   
- 
-  .conve {
-    display: flex;
-    margin: 35px -30px;
-    font-style: italic;
-    font-size: 1.3rem; 
-  }
-  .year{
-    color: #ffffff;
-    font-size: 3.8rem;
-    margin-top:5px;
-    margin-left: 10px;
-  }
   
   .slider {
   
@@ -1527,7 +1424,7 @@ member
   
   
   .explore-section h3 {
-    color:#00eeff;
+    color:#d148d3;
     font-size: 1.5em;
     margin-bottom: 20px;
   }
@@ -1539,7 +1436,7 @@ member
   }
   
   .explore-section ul li a:hover {
-    color:#00eeff;
+    color:#d148d3;
     
   }
   
@@ -1576,7 +1473,7 @@ member
     flex-direction: column;
   }
   .footer-section h4 {
-    color: #00eeff;
+    color: #d148d3;
     font-size: 1.5em;
     margin-bottom: 10px;
   }
@@ -1588,25 +1485,7 @@ member
 }
 
 @media screen and (max-width: 670px) {
-  .logog{
-    scale: 0.30;;
-    margin: -200px -130px;
-    padding:0px 0px;
-  }
   
- 
-  .conve {
-    display: flex;
-    margin: 45px -30px;
-    font-style: italic;
-    font-size: 1.0rem; 
-  }
-  .year{
-    color: #ffffff;
-    font-size: 2.7rem;
-    margin-top:5px;
-    margin-left: 10px;
-  }
   
   .slider {
   
@@ -1720,12 +1599,13 @@ member
   
   
  .footer{
+  
   flex-direction: column;
  }
   
   .converse .heading {
 
-font-size: 21px;
+    font-size: 21px;
     margin-left:-210px;
    
   }
@@ -1740,7 +1620,7 @@ font-size: 21px;
   
   
   .explore-section h3 {
-    color:#00eeff;
+    color:#d148d3;
     font-size: 1.2em;
     margin-bottom: 20px;
   }
@@ -1753,7 +1633,7 @@ font-size: 21px;
   }
   
   .explore-section ul li a:hover {
-    color:#00eeff;
+    color:#d148d3;
     
   }
   
@@ -1791,25 +1671,7 @@ font-size: 21px;
 
 
 @media screen and (max-width: 522px) {
-  .logog{
-    scale: 0.20;;
-    margin: -200px -160px;
-    padding:0px 0px;
-  }
-  
- 
-  .conve {
-    display: flex;
-    margin: 30px -30px;
-    font-style: italic;
-    font-size: 0.7rem; 
-  }
-  .year{
-    color: #ffffff;
-    font-size: 2.0rem;
-    margin-top:5px;
-    margin-left: 10px;
-  }
+
   .header {
  
     display:flex;
@@ -1900,16 +1762,7 @@ font-size: 21px;
  .footer{
   flex-direction: column;
  }
- .footer-section h4 {
-  color: #00eeff;
-  font-size: 0.8em;
-  margin-bottom: 10px;
-}
 
-.footer-section p {
-  font-size: 0.8em;
-  margin: 2px 0;
-}
 .ex{
   font-size:medium;
 }
@@ -1930,7 +1783,7 @@ font-size: 21px;
   
   
   .explore-section h3 {
-    color:#00eeff;
+    color:#d148d3;
     font-size: 1.0em;
     margin-bottom: 20px;
   }
@@ -1944,7 +1797,7 @@ font-size: 21px;
   }
   
   .explore-section ul li a:hover {
-    color:#00eeff;
+    color:#d148d3;
     
   }
   
@@ -1961,7 +1814,7 @@ font-size: 21px;
   .welcome-message {
     margin-top: 0px;
     font-size: 0.8rem;
-    width: 200%;
+    width: auto;
   }
 
 
@@ -1983,74 +1836,13 @@ font-size: 21px;
 
 
 @media screen and (max-width: 440px) {
-  .logog{
-    scale: 0.15;;
-    margin: -300px -160px;
-    padding:0px 0px;
-  }
-  
  
-  .conve {
-    display: flex;
-    margin: 20px -30px;
-    font-style: italic;
-    font-size: 0.6rem; 
-  }
-  .year{
-    color: #ffffff;
-    font-size: 1.7rem;
-    margin-top:5px;
-    margin-left: 10px;
-  }
   .header {
  
     display:flex;
     height:100px
   }
-  .slider {
-  
-    width: 370px;
-    height: 230px;
-    overflow: hidden;
-    margin: 0px auto;
-    position: relative;
-    border-radius: 16px;
-    
-    /* Glassmorphism effect */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
-    
-  }
-  
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slides img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    
-  }
-  
- 
-  .sli {
-    
-    padding: 25px 25px;
-    margin-left: 70px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    width:380px;
-    margin-top:-30px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
+
   .teams-section .meet{
     margin-left:-30px;
     margin-top: -35px;
@@ -2098,16 +1890,7 @@ font-size: 21px;
  .footer{
   flex-direction: column;
  }
- .footer-section h4 {
-  color: #00eeff;
-  font-size: 0.8em;
-  margin-bottom: 10px;
-}
 
-.footer-section p {
-  font-size: 0.8em;
-  margin: 2px 0;
-}
 .her{
   font-size: 7px;
 }
@@ -2127,27 +1910,26 @@ font-size: 21px;
     padding: 0px 0px;
     width: 100%;
     text-align: left;
-    margin-left: -130px;;
     
   }
   
   
   .explore-section h3 {
-    color:#00eeff;
-    font-size: 0.6em;
-    margin-bottom: -25px;
+    color:#d148d3;
+    font-size: 1.6em;
+    width:150%;
+    
   }
   .explore-section ul li a{
     color: white;
     text-decoration: none;
-    font-size: 0.5rem;
+    font-size: 1.3rem;
     
-    
-   
+
   }
   
   .explore-section ul li a:hover {
-    color:#00eeff;
+    color:#d148d3;
     
   }
   
@@ -2158,13 +1940,14 @@ font-size: 21px;
   }
   
   .menu li {
-    margin-top: -10px;
+    margin-top: 0px;
+    padding: 5px;
   }
   
   .welcome-message {
     margin-top: -10px;
-    font-size: 0.5rem;
-    width: 200%;
+    font-size: 1rem;
+    width: 150%;
   }
 
 
@@ -2184,7 +1967,7 @@ font-size: 21px;
   
 }
 
-@media screen and (max-width: 345px){
+@media screen and (max-width: 343px){
 
   .teams-section .lin{
     display: flex;
@@ -2199,37 +1982,17 @@ font-size: 21px;
    .ex{
     font-size: medium;
    }
-
+   .welcome-message {
+    margin-top: 30px;
+    font-size: 1.9em;
+    width:auto;
+  }
+  
 }
 
 @media screen and (max-width: 335px) {
-  .logog{
-    scale: 0.10;
-    margin: -300px -170px;
-    padding:0px 0px;
-  }
-  
+
  
-  .conve {
-    display: flex;
-    margin: 20px -50px;
-    font-style: italic;
-    font-size: 0.3rem; 
-  }
-  .year{
-    color: #ffffff;
-    font-size: 0.9rem;
-    margin-top:0px;
-    margin-left: 5px;
-  }
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0); /* Starting and ending position */
-    }
-    50% {
-      transform: translateY(-1px); /* Move up by 20px */
-    }
-  }
   .header {
  
     display:flex;
@@ -2317,7 +2080,7 @@ font-size: 21px;
   flex-direction: column;
  }
  .footer-section h4 {
-  color: #00eeff;
+  color: #d148d3;
   font-size: 0.5em;
   margin-bottom: 10px;
 }
@@ -2351,7 +2114,7 @@ font-size: 21px;
   
   
   .explore-section h3 {
-    color:#00eeff;
+    color:#d148d3;
     font-size: 0.4em;
     margin-bottom: -25px;
     width:200%;
@@ -2366,7 +2129,7 @@ font-size: 21px;
   }
   
   .explore-section ul li a:hover {
-    color:#00eeff;
+    color:#d148d3;
     
   }
   
@@ -2400,5 +2163,189 @@ font-size: 21px;
   max-width: 400px;
 
 }
+.welcom-message {
+  margin-top: 30px;
+  font-size: 1.9em;
+  width:auto;
+}
   
 }
+
+
+
+
+.explor-section{
+  margin-top:200px;
+text-align: center;
+}
+
+
+  .explor-section h3 {
+    color:#d148d3;
+    font-size: 2.5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    
+    
+  }
+  .explor-section ul li a{
+    color: white;
+    text-decoration: none;
+    
+    
+    
+   
+  }
+  
+  .explor-section ul li a:hover {
+    background: linear-gradient(90deg, #4873ff 20%, #d148d3 80%); /* More distinct color transition */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+  }
+  
+  .menu {
+   
+    font-size: 1.8em;
+   
+  }
+  
+  .menu li {
+    
+  }
+  
+  .welcom-message {
+    
+    font-size: 1.8em;
+  
+  }
+
+.header {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+
+}
+
+.logog {
+  cursor: pointer; 
+  margin-top: 0px; 
+  
+}
+
+.conve {
+  display: flex; 
+}
+  
+@keyframes lightning {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 20px #ffffff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+  }
+  50% {
+    opacity: 0.5;
+    text-shadow: #ff00ff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 20px #ffffff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+  }
+}
+
+.co {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem; 
+  margin: 0px 5px; 
+  padding-top: 30px;
+  cursor: pointer;
+  animation: lightning 2s infinite;
+ 
+ 
+}
+.year{
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  margin-top: -20px;
+}
+.footer-section p {
+  
+  margin-top:7px;
+}
+.sub{
+  font-size: large;
+  font-weight: 400;
+}
+.text-sm {
+font-size:small;
+}
+
+.hompage .team-cards-container{
+  margin-top: 50px;
+  
+}
+.hompage .team-card{
+  height: auto;
+  width:70%;
+}
+.hompage .team-card:hover{
+  height: auto;
+  
+}
+.tilak{
+  text-align: center;
+  margin-top:70px;
+  
+}
+.tilaks {
+  font-size: 35px;
+  font-weight: 450;
+  background: linear-gradient(90deg, #4873ff 40%, #d148d3 60%); /* More distinct color transition */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.spo{
+  display: flex;
+  justify-content: center;
+  
+}
+.team-card {
+ height: 90%;
+  padding: 5px 25px; 
+  /* margin:0px 10px; */
+}
+
+.teams-section h3 {
+  margin-top: 0px;
+}
+.converse .heading{
+  background: linear-gradient(90deg, #4873ff 40%, #d148d3 60%); /* More distinct color transition */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 450;
+}
+.converse p{
+  font-weight: 450;
+}
+
+
+@media screen and (max-width: 669px) {
+  .spo{
+    flex-direction: column;
+    
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  .co{
+    font-size: 5rem;
+  }
+  .year{
+    font-size: 4rem;
+  }
+}
+

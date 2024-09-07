@@ -7,28 +7,28 @@ function Footer() {
     <footer className="footer">
         <div className="footer-section">
           <h4>Head of Department</h4>
-          <p>Dr. Viveksha Jariwala</p>
+          <p>Dr. Vivaksha Jariwala</p>
         </div>
         <div className="footer-section">
           <h4>Faculty Coordinators</h4>
-          <p>Dr. Dhruti Sharma</p>
-          <p>Prof. Bhumika Patel</p>
-          <p>Dr. Mita Parikh</p>
-          <p>Prof. Ashish Kharvar</p>
+          <p>Prof. Mukesh Patel</p>
+          <p>Prof. Ankit Patel</p>
+          <p>Prof. Karishma Desai </p>
+          <p>Prof. Nitya Komalan </p>
         </div>
         <div className="footer-section">
           <h4>Student Heads</h4>
           <p>Mitarsh Savaliya</p>
-          <p>Jensi Ghadiya</p>
           <p>Harsh Maniya</p>
+          <p>Jensi Ghadiya</p>
           <p>Shreya Chopra</p>
       
         </div>
         <div className="footer-section">
           <h4>Web Developers</h4>
           <p>Tilak Viradiya</p>
-          <p></p>
-          <p></p>
+          <p>Jenish Sonani</p>
+          <p>Keyur Moradiya</p>
         </div>
       </footer>
       <section className="her">
@@ -47,7 +47,7 @@ function Footer() {
             </a>
           </div>
           <div>
-          <p class="text-sm md:text-lg">© Converse 2024 - All Rights Reserved</p>
+          <p class="text-sm">© Converse 2024 - All Rights Reserved</p>
           </div>
         </div>
       </section>

@@ -1,40 +1,56 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import ImageSlider from './Imageslider';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
+import SponsorCard from '../components/SponsorCard';
+
+
 
 
 
 const HomePage = () => {
+  const teams = [
+    { title: 'Career line ', imageSrc: 'https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/converse-team' },
+    { title: 'House of sanskruti', imageSrc: 'https://th.bing.com/th/id/OIG4.lL1HeudmWRX2k6hOXZs6?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/web-team' },
+    { title: 'Bull Rider', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/webwave-team' },
+  ];
   return (<>
-    <Header/>
-    <ScrollToTop/>
-    <div className="homepage">
-    
-      
-      <div className="content">
-        <div className="explore-section">
-          <h3>EXPLORE THE FEST</h3>
+    <Header />
+    <ScrollToTop />
+
+    <div className="hompage">
+
+
+      <div className="conten">
+
+        <div className="explor-section">
+
+          <p className="tilaks">EXPLORE THE FEST</p>
+
           <ul className="menu">
-            <li><Link to="/about" >ABOUT</Link></li>
+            <li><Link to="/aboutpage" >ABOUT</Link></li>
             <li><Link to="/events" >EVENTS</Link></li>
-            <li><Link to="/scedule" >SCHEDULE</Link></li>
+            <li><Link to="/schedule" >SCHEDULE</Link></li>
             <li><Link to="/team" >TEAMS</Link></li>
             {/* <li><Link to="/sponsors" >SPONSORS</Link></li> */}
           </ul>
-          <p className="welcome-message">WELCOME TO 2024 EDITION OF CONVERSE</p>
+          <p className="welcom-message">WELCOME TO 2024 EDITION OF CONVERSE</p>
+
+        </div>
+        <div className='tilak'>
+          <div>
+            <p className="tilaks">Title Sponsors</p>
+         </div>
+         <div className='spo'><SponsorCard/></div>
         </div>
 
-        {/* <div className="tv-section">
-          <img src="https://i.gifer.com/origin/28/28a9d4f9210689382e3abfd1d196b126_w200.gif" alt="Retro TV" className="tv-image" />
-        </div> */}
       </div>
-     
+
     </div>
-    <Footer/>
-</>
+    <Footer />
+  </>
   );
 };
 

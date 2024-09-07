@@ -5,25 +5,40 @@ import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import great from "./great.png";
 
+
+import corei from '../pages/event-type/core2.webp';
+import graphicsi from '../pages/event-type/graphics.webp';
+import nontechi from '../pages/event-type/nontech.webp';
+import decorationi from '../pages/event-type/decoration.webp';
+import marketingi from '../pages/event-type/marketing.webp';
+import logohunti from '../pages/event-type/initlogohunt.jpg';
+import itquizi from '../pages/event-type//initiqquiz.jpg';
+import bugbuzzi from '../pages/event-type/initbugbuzz.jpg';
+import codathoni from '../pages/event-type/initcodathon.jpg';
+import pyiti from '../pages/event-type/initpyit.jpg';
+import aimemesi from '../pages/event-type/initaimemes.jpg';
+import techdebatei from '../pages/event-type/inittech.jpg';
+import cybersiegei from '../pages/event-type/initcyber.jpg';
+import webwavei from '../pages/event-type/initwb.jpg';
+import aiquizi from '../pages/event-type/initaiquiz.jpg';
+
 const TeamsSection = () => {
     const teams = [
-        { title: 'Converse', imageSrc: 'https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/converse-team' },
-        { title: 'Web Team', imageSrc: 'https://th.bing.com/th/id/OIG4.lL1HeudmWRX2k6hOXZs6?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/web-team' },
-        { title: 'Graphics  ', imageSrc: 'https://th.bing.com/th/id/OIG4.lL1HeudmWRX2k6hOXZs6?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/graphics-team' },
-        { title: 'Decoration ', imageSrc: 'https://th.bing.com/th/id/OIG2.Yc6GfbdHmNGgE5XJQutc?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/decoration-team' },
-        { title: 'Marketing ', imageSrc: 'https://th.bing.com/th/id/OIG1.B0yBf4S9ZAOxc8iuks7s?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/marketing-team' },
-        { title: 'Sponsorship', imageSrc: 'https://th.bing.com/th/id/OIG3.7B.9LAJfE1qfwVTzTXlh?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/sponsor-team' },
-        { title: 'Registration', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/registration-team' },
-        { title: 'Photography', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/photography-team' },
-        { title: 'Logo Hunt', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/logohunt-team' },
-        { title: 'IT Quiz', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/itquiz-team' },
-        { title: 'Bug Buzz', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/bugbuzz-team' },
-        { title: 'Codathon', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/codathon-team' },
-        { title: 'PY-IT', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/pyit-team' },
-        { title: 'AI Memes', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/aimemes-team' },
-        { title: 'Tech Debate', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/techdebate-team' },
-        { title: 'Cyber Siege', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/cybersiege-team' },
-        { title: 'Web Wave', imageSrc: 'https://th.bing.com/th/id/OIG1.XqMnE8S_.9bYYPvoOy3.?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn', link: '/webwave-team' },
+        { title: 'Converse', imageSrc: corei, link: '/converse-team' },
+         { title: 'Graphics  ', imageSrc: graphicsi, link: '/graphics-team' },
+         { title: 'Non-Tech', imageSrc:nontechi , link: '/nontech-team' },
+         { title: 'Decoration ', imageSrc:decorationi, link: '/decoration-team' },
+        { title: 'Marketing ', imageSrc:marketingi, link: '/marketing-team' },
+        { title: 'Logo Hunt', imageSrc:logohunti , link: '/logohunt-team' },
+        { title: 'IT Quiz', imageSrc: itquizi, link: '/itquiz-team' },
+        { title: 'Bug Buzz', imageSrc:bugbuzzi , link: '/bugbuzz-team' },
+        { title: 'Codathon', imageSrc:codathoni , link: '/codathon-team' },
+        { title: 'PY-IT', imageSrc: pyiti, link: '/pyit-team' },
+        { title: 'AI Memes', imageSrc:aimemesi , link: '/aimemes-team' },
+        { title: 'Tech Debate', imageSrc:techdebatei , link: '/techdebate-team' },
+        { title: 'Cyber Siege', imageSrc: cybersiegei, link: '/cybersiege-team' },
+        { title: 'Web Wave', imageSrc:webwavei, link: '/webwave-team' },
+        { title: 'AI Quiz', imageSrc:aiquizi , link: '/aiquiz-team' },
     ];
 
     return (

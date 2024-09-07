@@ -3,6 +3,16 @@ import { Link } from "react-router-dom";
 import ScrollToTop from '../../components/ScrollToTop';
 import great from "./great.png";
 import Footer from '../../components/Footer';
+import DhruvishParikh from '../../team/codathon/Dhruvish.png';
+import HarshilGajipara from '../../team/codathon/Harshil.png';
+import JeeyaTandel from '../../team/codathon/Jeeya.png';
+import KrishaKeraliya from '../../team/codathon/Krisha.png';
+import NencyKhunt from '../../team/codathon/Nency.png';
+import RenilDholariya from '../../team/codathon/RenilDholariya.png';
+import ShrutiGajera from '../../team/codathon/Shruti.png';
+import Ashish from '../../team/faculty/Ashish.png';
+import Apurva from '../../team/faculty/Apurv.png';
+import Mitul from '../../team/faculty/Apurv.png';
 
 function Codathon() {
     return (<>
@@ -26,16 +36,16 @@ function Codathon() {
             <h1 className="heading">Faculty Event Heads</h1>
             <div className="image-grid">
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={Ashish} alt="Coordinator 1" className="imagef" />
+                    <p>Prof. Ashish Kharvar</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={Apurva} alt="Coordinator 2" className="imagef" />
+                    <p>Prof. Apurva M.</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
+                    <img src={Apurva} alt="Coordinator 2" className="imagef" />
+                    <p>Prof. Mitul Patel</p>
                 </div>
               
             </div>
@@ -45,42 +55,44 @@ function Codathon() {
             <h1 className="heading">Student Event Heads</h1>
             <div className="image-grid">
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={HarshilGajipara} alt="Coordinator 1" className="imageh" />
+                    <p>Harshil Gajipara</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={JeeyaTandel} alt="Coordinator 2" className="imageh" />
+                    <p>Jeeya Tandel</p>
                 </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
-                </div>
+               
               
             </div>
             
         </div>
         <div className="converse">
-            <h1 className="heading">Student Volunteers</h1>
+            <h1 className="heading">Event Volunteers</h1>
             <div className="image-grid">
+               
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 1" className="image" />
+                    <img src={NencyKhunt} alt="Coordinator 2" className="imagev" />
+                    <p>Nency Khunt</p>
+                </div>
+                
+                <div className="image-card">
+                    <img src={ShrutiGajera} alt="Coordinator 4" className="imagev" />
+                    <p>Shruti Gajera</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 2" className="image" />
+                    <img src={KrishaKeraliya} alt="Coordinator 5" className="imagev" />
+                    <p>KrishaKeraliya</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 3" className="image" />
+                    <img src={RenilDholariya} alt="Coordinator 3" className="imagev" />
+                    <p>Renil Dholariya</p>
                 </div>
                 <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 4" className="image" />
+                    <img src={DhruvishParikh} alt="Coordinator 1" className="imagev" />
+                    <p>Dhruvish Parikh</p>
                 </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 5" className="image" />
-                </div>
-                <div className="image-card">
-                    <img src="https://th.bing.com/th/id/OIG1.B3PgoOGGZbZ_okUN.Gye?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Coordinator 6" className="image" />
-                </div>
+               
               
             </div>
             
